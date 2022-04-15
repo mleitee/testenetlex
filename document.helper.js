@@ -32,14 +32,11 @@ module.exports = {
             if(!match){
                 continue
             }
-            console.log("beleza po")
             if((lettersList[j + word.length] === " " || caracteresList.includes(lettersList[j + word.length]))) {
                let letter = " "
-               console.log("beleza po")
                let finalI = j
                let begginI = j - 1
                while(!letter.match(/^[A-Z]*$/) || caracteresList.includes(doc[begginI]))  {
-                console.log("xd" + begginI + letter + j)
                 letter = doc[begginI]
                 begginI = begginI - 1  
                } 
